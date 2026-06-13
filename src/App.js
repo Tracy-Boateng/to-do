@@ -1,3 +1,4 @@
+import TaskForm from "./components/TaskForm";
 import { useReducer, useEffect } from "react";
 
 const STORAGE_KEY = "myTasks";
@@ -95,9 +96,14 @@ function App() {
   }, [state.tasks]);
 
   return (
-    <div>
-      <h1>Task Tracker</h1>
-    </div>
+  <div>
+    <h1>Task Tracker</h1>
+
+      <TaskForm
+        inputValue={state.inputValue}
+        dispatch={dispatch}
+    />
+  </div>
   );
 }
 
