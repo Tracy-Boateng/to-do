@@ -1,3 +1,4 @@
+import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
 import { useReducer, useEffect } from "react";
 
@@ -102,6 +103,11 @@ function App() {
       <TaskForm
         inputValue={state.inputValue}
         dispatch={dispatch}
+    />
+
+    <TaskList
+      tasks={state.tasks}
+      dispatch={dispatch}
     />
   </div>
   );
