@@ -1,12 +1,10 @@
 @charset "utf-8";
 @import './reset.css';
 
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f6fb;
 }
-
 
 .app {
   min-height: 100vh;
@@ -29,7 +27,6 @@ body {
   color: #4f46e5;
   margin-bottom: 25px;
 }
-
 
 .task-form {
   display: flex;
@@ -64,7 +61,6 @@ body {
   opacity: 0.9;
 }
 
-
 .task-list {
   margin-top: 20px;
 }
@@ -74,8 +70,6 @@ body {
   color: #777;
   padding: 20px;
 }
-
-
 
 .task-item {
   display: flex;
@@ -91,8 +85,6 @@ body {
 .task-item h3 {
   margin-bottom: 5px;
 }
-
-
 
 .task-item.completed {
   background-color: #f0fdf4;
@@ -114,15 +106,11 @@ body {
   margin-bottom: 5px;
 }
 
-
-
 .task-date {
   font-size: 13px;
   color: #777;
   margin-top: 5px;
 }
-
-
 
 .task-actions {
   display: flex;
@@ -153,8 +141,6 @@ body {
 .delete-btn {
   background-color: #ef4444;
 }
-
-
 
 @media (max-width: 600px) {
   .task-form {
