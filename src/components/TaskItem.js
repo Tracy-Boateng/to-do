@@ -26,11 +26,19 @@ function TaskItem({ task, dispatch }) {
     >
       <div>
         <h3>{task.title}</h3>
-        <p>{task.date}</p>
+
+        {task.completed && (
+          <span className="completed-badge">
+            Completed
+          </span>
+        )}
+
+        <p className="task-date">{task.date}</p>
       </div>
 
       <div className="task-actions">
         <button
+          className="complete-btn"
           onClick={() =>
             dispatch({
               type: "TOGGLE_COMPLETE",
@@ -41,11 +49,15 @@ function TaskItem({ task, dispatch }) {
           <FaCheck />
         </button>
 
-        <button onClick={handleEdit}>
+        <button
+          className="edit-btn"
+          onClick={handleEdit}
+        >
           <FaEdit />
         </button>
 
         <button
+          className="delete-btn"
           onClick={() =>
             dispatch({
               type: "DELETE_TASK",

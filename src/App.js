@@ -97,19 +97,21 @@ function App() {
   }, [state.tasks]);
 
   return (
-  <div>
-    <h1>Task Tracker</h1>
+    <main className="app">
+      <section className="todo-container">
+        <h1>Task Tracker</h1>
 
-      <TaskForm
-        inputValue={state.inputValue}
-        dispatch={dispatch}
-    />
+        <TaskForm
+          inputValue={state.inputValue}
+          dispatch={dispatch}
+        />
 
-    <TaskList
-      tasks={state.tasks}
-      dispatch={dispatch}
-    />
-  </div>
+        <TaskList
+          tasks={state.tasks}
+          dispatch={dispatch}
+        />
+      </section>
+    </main>
   );
 }
 

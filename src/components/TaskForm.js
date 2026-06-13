@@ -10,8 +10,9 @@ function TaskForm({ inputValue, dispatch }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="task-form" onSubmit={handleSubmit}>
       <input
+        className="task-input"
         type="text"
         placeholder="Enter a task..."
         value={inputValue}
@@ -23,7 +24,7 @@ function TaskForm({ inputValue, dispatch }) {
         }
       />
 
-      <button type="submit">
+      <button className="add-btn" type="submit">
         Add Task
       </button>
     </form>

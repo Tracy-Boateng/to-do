@@ -2,9 +2,11 @@ import TaskItem from "./TaskItem";
 
 function TaskList({ tasks, dispatch }) {
   return (
-    <div>
+    <div className="task-list">
       {tasks.length === 0 ? (
-        <p>No tasks yet.</p>
+        <p className="empty-message">
+          No tasks yet. Add one above!
+        </p>
       ) : (
         tasks.map((task) => (
           <TaskItem
