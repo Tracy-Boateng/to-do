@@ -7,7 +7,6 @@ body {
   background-color: #f4f6fb;
 }
 
-/* App Layout */
 
 .app {
   min-height: 100vh;
@@ -31,7 +30,6 @@ body {
   margin-bottom: 25px;
 }
 
-/* Form */
 
 .task-form {
   display: flex;
@@ -66,7 +64,6 @@ body {
   opacity: 0.9;
 }
 
-/* Task List */
 
 .task-list {
   margin-top: 20px;
@@ -78,7 +75,7 @@ body {
   padding: 20px;
 }
 
-/* Task Item */
+
 
 .task-item {
   display: flex;
@@ -95,7 +92,7 @@ body {
   margin-bottom: 5px;
 }
 
-/* Completed Task */
+
 
 .task-item.completed {
   background-color: #f0fdf4;
@@ -117,7 +114,7 @@ body {
   margin-bottom: 5px;
 }
 
-/* Date */
+
 
 .task-date {
   font-size: 13px;
@@ -125,7 +122,7 @@ body {
   margin-top: 5px;
 }
 
-/* Buttons */
+
 
 .task-actions {
   display: flex;
@@ -157,7 +154,7 @@ body {
   background-color: #ef4444;
 }
 
-/* Mobile */
+
 
 @media (max-width: 600px) {
   .task-form {
